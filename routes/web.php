@@ -2,15 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'welcome', [
-    'greeting' => 'Hello',
-    'person' => 'José Pablo'
-]);
+Route::get('/', function () {
+    return view('welcome',[
+        'tasks' => [
+            'Go to the store',
+            'Go to the bank',
+            'Go to the post office'
+        ]
 
-
-
-
-
-
-Route::view('/contact', 'contact');
-Route::view('/about', 'about');
+    ]);
+});
