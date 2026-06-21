@@ -17,9 +17,9 @@
         <div class="mt-6 text-white">
             @if(count($ideas))
                 <h2>Your Ideas</h2>
-                <ul>
+                <ul class="mt-6">
                     @foreach($ideas as $idea)
-                        <li>{{ $idea }}</li>
+                    <a href="/ideas/{{ $idea->id }}" class="text-sm">{{$idea->description}}</a>
                     @endforeach
                 </ul>
             @endif
