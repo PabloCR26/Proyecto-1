@@ -27,5 +27,10 @@ Route::get('/login', [SessionController::class, 'create'])->name('login');
 Route::post('/login', [SessionController::class, 'store']);
 });
 
+Route::get('/admin', function(){
+    Gate::authorize('view-admin');
+    return 'Private only admin';
+});
+
 
 
