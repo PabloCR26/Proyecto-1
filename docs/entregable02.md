@@ -5,3 +5,5 @@
 
 - [Authorization-Using-Gates](Authorization%20Using%20Gates/Authorization-Using-Gates.md)
 - [Authorization-Using-Policies](AuthorizationPolicies/AuthorizationPolicies.md)
+- [FrontedAssetBundlingWithVite](FrontendAssetBundlingWithVite/FrontendAssetBundlingwithVite.md)
+- [Notifications](Notifications/Notifications.md)

@@ -54,7 +54,7 @@ class User extends Authenticatable
     public function isAdmin()
     {
         return $this->id==1; // solo nelita is admin
-    }
+    } 
 
 
     public function ideas(): HasMany
