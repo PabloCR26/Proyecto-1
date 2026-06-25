@@ -9,7 +9,7 @@
 
 
 @plugin 'daisyui'{
-    themes: night
+    themes: sunset --default
 }
 
 @theme {
