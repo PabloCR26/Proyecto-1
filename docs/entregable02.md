@@ -10,3 +10,5 @@
 - [When to queue it Up](When%20to%20Queue%20it%20Up/WhenToQueueItUp.md)
 - [How to Get Started Testing Your Code](How%20to%20Get%20Started%20Testing%20Your%20Code/HowtoGetStartedTestingYourCode.md)
 - [Final Project Setup](FinalProjectSetup/FinalProjectSetup.md)
+- [Desing Your Model Layer](Desing%20Your%20Model%20Layer/DesingYourModelLayer.md)
+- [Tailwind Theme Setup And Initial UI](Tailwind%20Theme%20Setup%20And%20Initial%20UI/TailwindThemeSetupAndInitialUI.md)
