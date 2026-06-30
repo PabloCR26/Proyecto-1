@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Models;
 
 use App\IdeaStatus;
@@ -8,17 +10,17 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
- class Step extends Model
-    {
-        /** @use HasFactory<StepFactory> */
-        use HasFactory;
+class Step extends Model
+{
+    /** @use HasFactory<StepFactory> */
+    use HasFactory;
 
-        protected $attributes = [
-            'completed' => false,
-        ];
+    protected $attributes = [
+        'completed' => false,
+    ];
 
-public function idea(): BelongsTo
+    public function idea(): BelongsTo
     {
-            return $this->belongsTo(IdeaStatus::class);
+        return $this->belongsTo(IdeaStatus::class);
     }
 }

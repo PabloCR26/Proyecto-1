@@ -1,22 +1,34 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreIdeaRequest;
 use App\Http\Requests\UpdateIdeaRequest;
+use App\IdeaStatus;
 use App\Models\Idea;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\View\View;
 
 class IdeaController extends Controller
 {
-    public function index(): View
+    public function index(Request $request)
     {
-    
-        $ideas = Auth::user()->ideas()->get();
+        $user = Auth::user();
+        $status = $request->status;
+
+        if (! in_array($status, IdeaStatus::values())) {
+            $status = null;
+        }
+        $ideas = $user
+            ->ideas()
+            ->when($request->status, fn ($query, $status) => $query->where('status', $status))
+            ->get();
 
         return view('idea.index', [
-            'ideas' => $ideas
+            'ideas' => $ideas,
+            'statusCounts' => Idea::statusCounts(Auth::user()),
         ]);
     }
 
