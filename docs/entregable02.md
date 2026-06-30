@@ -13,3 +13,6 @@
 - [Desing Your Model Layer](Desing%20Your%20Model%20Layer/DesingYourModelLayer.md)
 - [Tailwind Theme Setup And Initial UI](Tailwind%20Theme%20Setup%20And%20Initial%20UI/TailwindThemeSetupAndInitialUI.md)
 - [Browser Testing Registration Forms With Pest](Browser%20Testing%20Registration%20Forms%20With%20Pest/BrowserTestingRegistrationFormsWithPest.md)
+- [Flash Messaging and Interactivity with AlpineJS](Flash%20Messaging%20and%20Interactivity%20with%20AlpineJS/FlashMessagingandInteractivitywithAlpineJS.md)
+
+
